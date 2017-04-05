@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 				//'type' => 'text',
 //				'text' => 'bank'
 				
-    		'type': 'image',
+    		'type'=> 'image',
     		'originalContentUrl'=> 'http://www.sepeb.com/d/image_20170130_062749_35673.jpg',
     		'previewImageUrl'=> 'http://www.sepeb.com/d/image_20170130_062749_35673.jpg'			
 				
