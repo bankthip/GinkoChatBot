@@ -16,15 +16,25 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			$messages = [
-				//'type' => 'text',
-//				'text' => 'bank'
+			if ($text == "bank"){
+				$messages = [
+				'type' => 'text',
+				'text' => 'thank'
+				];	
 				
-    		'type'=> 'image',
-    		'originalContentUrl'=> 'http://www.sepeb.com/d/image_20170130_062749_35673.jpg',
-    		'previewImageUrl'=> 'http://www.sepeb.com/d/image_20170130_062749_35673.jpg'			
+			}else{
+				$messages = [
+				'type' => 'text',
+				'text' => 'text'
+				];	
+			}
+			
 				
-			];
+    		//'type'=> 'image',
+//    		'originalContentUrl'=> 'http://www.sepeb.com/d/image_20170130_062749_35673.jpg',
+//    		'previewImageUrl'=> 'http://www.sepeb.com/d/image_20170130_062749_35673.jpg'			
+				
+			
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
