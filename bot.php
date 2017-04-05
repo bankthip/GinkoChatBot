@@ -24,15 +24,14 @@ if (!is_null($events['events'])) {
 				
 			}else{
 				$messages = [
-				'type' => 'text',
-				'text' => 'text'
+				    		'type'=> 'image',
+   		'originalContentUrl'=> 'http://ginkotown.com/line_text/1024.jpg',
+  		'previewImageUrl'=> 'http://ginkotown.com/line_text/240.jpg'
 				];	
 			}
 			
 				
-    		//'type'=> 'image',
-//    		'originalContentUrl'=> 'http://www.sepeb.com/d/image_20170130_062749_35673.jpg',
-//    		'previewImageUrl'=> 'http://www.sepeb.com/d/image_20170130_062749_35673.jpg'			
+			
 				
 			
 
@@ -42,6 +41,8 @@ if (!is_null($events['events'])) {
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
 			];
+			
+			
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
