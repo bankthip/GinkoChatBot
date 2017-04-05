@@ -17,10 +17,12 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = [
-				'type' => 'text',
-				'text' => 'bank'
+				//'type' => 'text',
+//				'text' => 'bank'
 				
-				
+    		'type': 'image',
+    		'originalContentUrl'=> 'http://www.sepeb.com/d/image_20170130_062749_35673.jpg',
+    		'previewImageUrl'=> 'http://www.sepeb.com/d/image_20170130_062749_35673.jpg'			
 				
 			];
 
