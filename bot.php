@@ -17,11 +17,19 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-		
+		if($text == 'bank'){
 			$messages = [	
 				'type' => 'text',
 				'text' => $text
 			];
+		}else{
+			$messages = [	
+				'type' => 'text',
+				'text' => 'bank'
+			];
+		}
+			
+			
 			
 
 			// Make a POST Request to Messaging API to reply to sender
