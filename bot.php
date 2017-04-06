@@ -25,8 +25,8 @@ if (!is_null($events['events'])) {
 		}else{
 			$messages = [	
 				'type' => 'image',
-				'originalContentUrl' => 'http://ginkotown.com/line_text/1024.jpg',
-				'previewImageUrl'=> 'http://ginkotown.com/line_text/240.jpg'
+				'originalContentUrl' => 'https://ginkochat.herokuapp.com/1024.jpg',
+				'previewImageUrl'=> 'https://ginkochat.herokuapp.com/240.jpg'
 			];
 		}
 			
