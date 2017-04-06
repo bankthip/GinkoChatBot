@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 			if ($text == "bank"){
 				$messages = [
 				'type' => 'text',
-				'text' => 'thank://'
+				'text' => 'thank'
 				];	
 				
 			}else{
