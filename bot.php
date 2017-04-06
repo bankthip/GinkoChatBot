@@ -22,12 +22,14 @@ if (!is_null($events['events'])) {
 				'type' => 'text',
 				'text' => $text
 			];
-		}else{
+		}elseif($text== 'image'){
 			$messages = [	
 				'type' => 'image',
 				'originalContentUrl' => 'https://ginkochat.herokuapp.com/1024.jpg',
 				'previewImageUrl'=> 'https://ginkochat.herokuapp.com/240.jpg'
 			];
+		}else{
+			
 		}
 			
 			
