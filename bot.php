@@ -9,7 +9,8 @@ if (!is_null($events['events'])) {
 	// Loop through each event
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
-		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
+		if (
+			== 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
 			// Get replyToken
@@ -19,15 +20,17 @@ if (!is_null($events['events'])) {
 			if ($text == "bank"){
 				$messages = [
 				'type' => 'text',
-				'text' => 'thank'
+				'text' => 'thank://'
 				];	
 				
 			}else{
 				$messages = [
-				    		'type'=> 'image',
-   		'originalContentUrl'=> 'http://ginkotown.com/line_text/1024.jpg',
-  		'previewImageUrl'=> 'http://ginkotown.com/line_text/240.jpg'
-				];	
+					'type' => 'text',
+					'text' => $text
+//				    		'type'=> 'image',
+//   		'originalContentUrl'=> 'http://ginkotown.com/line_text/1024.jpg',
+//  		'previewImageUrl'=> 'http://ginkotown.com/line_text/240.jpg'
+//				];	
 			}
 			
 				
