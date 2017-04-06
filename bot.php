@@ -24,8 +24,9 @@ if (!is_null($events['events'])) {
 			];
 		}else{
 			$messages = [	
-				'type' => 'text',
-				'text' => 'bank'
+				'type' => 'image',
+				'originalContentUrl' => 'http://ginkotown.com/line_text/1024.jpg',
+				'previewImageUrl'=> 'http://ginkotown.com/line_text/240.jpg'
 			];
 		}
 			
