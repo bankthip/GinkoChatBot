@@ -29,6 +29,25 @@ if (!is_null($events['events'])) {
 				'previewImageUrl'=> 'https://ginkochat.herokuapp.com/240.jpg'
 			];
 		}else{
+			$messages = [
+				{
+				  'type'=> 'template',
+				  'altText'=>'this is a buttons template',
+				  'template'=> {
+					  'type'=>'buttons',
+					  'thumbnailImageUrl'=>'https://example.com/bot/images/image.jpg',
+					  'title'=>'Menu',
+					  'text'=>'Please select',
+					  'actions'=>[
+						  {
+							'type'=>'postback',
+							'label'=>'Buy',
+						  },
+					  ]
+				  }
+				}
+			];
+			
 			
 		}
 			
